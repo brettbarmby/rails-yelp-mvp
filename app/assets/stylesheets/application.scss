@@ -11,3 +11,51 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+ ul {
+  list-style-type: none;
+  // text-align: center;
+  padding: 0;
+}
+
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #126CE7;
+  text-decoration: none;
+}
+
+.container {
+  margin: 16px auto;
+  // text-align: center;
+  width: 33%;
+  padding: 16px 64px;
+  box-shadow: 2px 2px 5px 2px lightgray;
+  background-color: #f7f7f7;
+  border-radius: 4px;
+}
+
+.info {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.buttons {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.index-btn {
+  margin: auto;
+  text-align: center;
+  width: 100%;
+}
+
+

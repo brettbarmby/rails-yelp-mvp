@@ -1,1 +1,19 @@
-<h1>Test</h1>
+<div class='container'>
+  <h1> <%= @restaurant.name %></h1>
+  <h3> <%= @restaurant.category.capitalize %> </h3>
+  <div class='info'>
+    <p> <%= @restaurant.address %> </p>
+    <p> <%= @restaurant.phone_number %> </p>
+  </div>
+
+  <ul>
+    <li>Reviews:</li>
+    <% @restaurant.reviews.each do |review| %>
+      <li><%= review.content %> <%= review.rating %></li>
+      <% end %>
+  </ul>
+  <div class="buttons">
+   <%= link_to "Home", restaurants_path, class: "btn btn-primary" %>
+    <%= link_to "Leave a review", new_restaurant_review_path(@restaurant), class: "btn btn-primary" %>
+  </div>
+</div>
